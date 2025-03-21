@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointLife-PPC-UiGen", "PointLife-PPC-UiGen\PointLife-PPC-UiGen.csproj", "{68C31747-F7CA-4B22-B977-B7E4293E5D42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointLife-PPC-UiGen-Types", "PointLife-PPC-UiGen-Types\PointLife-PPC-UiGen-Types.csproj", "{68C31747-F7CA-4B22-B977-B7E4293E5D42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
