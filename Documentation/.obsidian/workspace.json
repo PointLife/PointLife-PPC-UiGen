@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "f30b1edf2b47e470",
+    "type": "split",
+    "children": [
+      {
+        "id": "d88e0ba690aff31d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "003c94ef9f9ab7a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PL-PPC-UiGen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PL-PPC-UiGen"
+            }
+          }
+        ]
+      },
+      {
+        "id": "981091fa05f4f5e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f20392104f1abc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PL-PPC-UiGen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PL-PPC-UiGen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "18ef764b32c38a90",
+    "type": "split",
+    "children": [
+      {
+        "id": "c55efbdb3d01c4bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3edb7158c4dd26ad",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c19ef78375a785b9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f13756f7ee67cc45",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b16d57fd991b4e26",
+    "type": "split",
+    "children": [
+      {
+        "id": "7607b5275dd560a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91e6bd2eace6f65b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PL-PPC-UiGen.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for PL-PPC-UiGen"
+            }
+          },
+          {
+            "id": "4f50f02ca7de0e91",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PL-PPC-UiGen.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from PL-PPC-UiGen"
+            }
+          },
+          {
+            "id": "f9f46fb27a3468fa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "783855e3a0811dc1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PL-PPC-UiGen.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of PL-PPC-UiGen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "003c94ef9f9ab7a0",
+  "lastOpenFiles": [
+    "UiGenBETA.7z",
+    "UiGenBETA.7z.tmp",
+    "Pasted image 20250321234142.png",
+    "Pasted image 20250321234313.png",
+    "PL-PPC-UiGen.md",
+    "Pasted image 20250321234033.png",
+    "Pasted image 20250321233648.png",
+    "PL_PPC_UiGen.unitypackage",
+    "0PPC-UiGen-BaseType.dll",
+    "Pasted image 20250321232904.png",
+    "Pasted image 20250321232517.png",
+    "Pasted image 20250321232407.png",
+    "Pasted image 20250321232252.png",
+    "Pasted image 20250321231514.png",
+    "create a link.md"
+  ]
+}

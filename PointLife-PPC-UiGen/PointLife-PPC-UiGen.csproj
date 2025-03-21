@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PointLife.UiGen</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyTitle>PointLife-PPC-UiGen</AssemblyTitle>
+    <Product>PointLife-PPC-UiGen</Product>
+    <Copyright>Copyright ©  2025</Copyright>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <LangVersion>preview</LangVersion>
+    <AssemblyName>0PPC-UiGen-BaseType</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Scripts">
+      <HintPath>$(BPDIR)\BrokeProtocol_Data\Managed\Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="RestClient">
+      <HintPath>$(BPDIR)\BrokeProtocol_Data\Managed\RestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(BPDIR)\BrokeProtocol_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(BPDIR)\BrokeProtocol_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Only needed for windows as it is suggested to create a soft link/symlink on unix -->
+  <Target Condition="'$(OS)' == 'Windows_NT'" Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(OutDir)\$(TargetFileName)&quot; &quot;$(BPDIR)\Plugins&quot;" />
+  </Target>
+  
+</Project>
