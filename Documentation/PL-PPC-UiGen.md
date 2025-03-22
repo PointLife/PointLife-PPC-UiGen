@@ -2,6 +2,8 @@
 	![[PL_PPC_UiGen.unitypackage]]
 2. Wait for Unity to Recompile
 3. .uxml files need to be in Format [PluginName]\_[Category/Folder]\_[MenuName], eg `BetterBP_Estate_ManageSettings`
+	This is to make sure that no names of elements conflict with other Menus or Plugins.
+
 4. UI Objects Name needs to be set to the Variable Name
 	![[Pasted image 20250321232252.png]]
 5. If you want a Close Button it needs to be called "CloseMenu"
