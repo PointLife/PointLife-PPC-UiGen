@@ -40,7 +40,7 @@ namespace PointLife.UiGen.BaseFields
     // User Input
     public class TextField(string name, ShPlayer player, string callBackEvent) : BaseField(name, player)
     {
-        public string Text { get; set; }
+        public string Text { get; private set; }
 
         public override Promise GetValue()
         {
@@ -76,7 +76,7 @@ namespace PointLife.UiGen.BaseFields
     // Label
     public class TextElement(string name, ShPlayer player, string callBackEvent) : BaseField(name, player)
     {
-        public string Text { get; set; }
+        private string Text;
 
         [Obsolete("This is a label, it can't be get Valued due to BP missing methode")]
         public override Promise GetValue()
