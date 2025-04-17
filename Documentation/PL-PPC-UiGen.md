@@ -50,7 +50,7 @@
 
 13. **Add DLL Reference**  
    Add `!0PPC-UiGen-BaseType.dll` as a reference in your plugin and place it in the `Plugins` or `Managed` folder.  
-   ![0PPC-UiGen-BaseType.dll](%210PPC-UiGen-BaseType.dll)
+    [!0PPC-UiGen-BaseType.dll](%210PPC-UiGen-BaseType.dll)
 
    ```xml
    <Reference Include="0PPC-UiGen-BaseType">
