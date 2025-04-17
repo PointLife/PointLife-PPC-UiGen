@@ -138,8 +138,22 @@ public class Ui_ToolKit_Reader
                 Issues.Add(Issue);
             }
         }
-        
-        
+
+        foreach (var elm in UiElementData.ProgressBarInfos)
+        {
+            if (!elm.ElementName.StartsWith(fullName))
+            {
+                var Issue = new Issue()
+                {
+                    Original = elm.ElementName,
+                    Suggestion = fullName + "_" + elm.ElementName.Split('_').Last(),
+                    IssueType = IssueType.ProgressBar
+                };
+                Log.AppendLine($"{elm.ElementName} has wrong name!");
+                Issues.Add(Issue);
+            }
+        }
+
         if (UiElementData.Menu.ElementName != fullName)
         {
             var Issue = new Issue()
@@ -163,6 +177,7 @@ public class Ui_ToolKit_Reader
         session["TextFieldInfos"] = UiElementData.TextFieldInfos.Select(x => x.ElementName).ToList();
         session["LabelInfos"] = UiElementData.LabelInfos.Select(x => x.ElementName).ToList();
         session["ToggleInfos"] = UiElementData.ToggleInfos.Select(x => x.ElementName).ToList();
+        session["ProgressBarInfos"] = UiElementData.ProgressBarInfos.Select(x => x.ElementName).ToList();
 
         session["MenuFilePath"] = FilePath;
         session["UnityVersion"] = Application.unityVersion;
@@ -199,6 +214,9 @@ public class Ui_ToolKit_Reader
             case IssueType.TextField:
                 UiElementData.TextFieldInfos.First(x => x.ElementName == oldName).ElementName = newName;
                 break;
+            case IssueType.ProgressBar:
+                UiElementData.ProgressBarInfos.First(x => x.ElementName == oldName).ElementName = newName;
+                break;
             default:
                 break;
         }
@@ -206,15 +224,6 @@ public class Ui_ToolKit_Reader
         XmlDocument.Save(FilePath);
     }
 
-    public class TemplateModel
-    {
-        public string MenuName { get; set; }
-        public string MenuFullName { get; set; }
-        public List<string> ButtonInfos { get; set; }
-        public List<string> TextFieldInfos { get; set; }
-        public List<string> LabelInfos { get; set; }
-        public List<string> ToggleInfos { get; set; }
-    }
 
     private UIElementsInfo ParseUXMLDocument(string uxmlDocument)
     {
@@ -260,15 +269,16 @@ public class Ui_ToolKit_Reader
         var toggleNodes = XmlDocument.SelectNodes("//ui:Toggle", namespaceManager);
         foreach (XmlNode toggleNode in toggleNodes)
         {
-            if (toggleNode.Attributes["name"] == null)
-            {
-                Console.Write("Warning: Skipping Toggle due to no name!");
-                continue;
-            }
-
-
             var x = new ElementInfo { XmlNode = toggleNode };
             toggleInfos.Add(x);
+        }
+
+        var progressBarInfos = new List<ElementInfo>();
+        var progressBarNodes = XmlDocument.SelectNodes("//ui:ProgressBar", namespaceManager);
+        foreach (XmlNode elm in progressBarNodes)
+        {
+            var x = new ElementInfo { XmlNode = elm };
+            progressBarInfos.Add(x);
         }
 
         return new UIElementsInfo
@@ -278,6 +288,7 @@ public class Ui_ToolKit_Reader
             TextFieldInfos = textFieldInfos,
             LabelInfos = labelInfos,
             ToggleInfos = toggleInfos,
+            ProgressBarInfos = progressBarInfos
         };
 
     }
@@ -291,6 +302,7 @@ public enum IssueType
     Label,
     TextField,
     Toggle,
+    ProgressBar,
 }
 
 class UIElementsInfo
@@ -301,6 +313,7 @@ class UIElementsInfo
     public List<ElementInfo> TextFieldInfos { get; set; }
     public List<ElementInfo> LabelInfos { get; set; }
     public List<ElementInfo> ToggleInfos { get; set; }
+    public List<ElementInfo> ProgressBarInfos { get; internal set; }
 }
 
 class ElementInfo

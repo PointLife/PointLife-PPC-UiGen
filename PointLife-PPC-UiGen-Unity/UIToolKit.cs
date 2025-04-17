@@ -2,17 +2,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
 using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-using Palmmedia.ReportGenerator.Core;
 using System;
-using Codice.CM.Client.Differences;
-using Codice.Client.BaseCommands;
 using UnityEngine.UIElements;
-using Microsoft.VisualStudio.TextTemplating;
-using Unity.Android.Gradle;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public class UXMLExporterWithDialog
