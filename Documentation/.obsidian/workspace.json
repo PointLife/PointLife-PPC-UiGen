@@ -11,12 +11,14 @@
             "id": "003c94ef9f9ab7a0",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "GenerateUiCodeButton.png"
+                "file": "PL-PPC-UiGen.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "GenerateUiCodeButton"
+              "icon": "lucide-file",
+              "title": "PL-PPC-UiGen"
             }
           },
           {
@@ -41,14 +43,10 @@
             "id": "5d3a8253833d4666",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Currently supported Elements.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Currently supported Elements"
+              "title": "New tab"
             }
           }
         ]
@@ -200,6 +198,12 @@
   },
   "active": "003c94ef9f9ab7a0",
   "lastOpenFiles": [
+    "PL_PPC_UiGen.unitypackage",
+    "CloseButton.png",
+    "CurrentlySupportedElements.md",
+    "GenerateUiCodeButton.png",
+    "VS_Folder.png",
+    "devenv_KcUxgixelt.png",
     "Currently supported Elements.md",
     "PL-PPC-UiGen.md",
     "VS_ScaffoldOverwrite.png",
@@ -207,15 +211,11 @@
     "VS_Scaffold.png",
     "UiToolKitGeneratorApplyFixes.png",
     "UiToolKitGenerator.png",
-    "CloseButton.png",
     "UiToolKitEditor.png",
-    "GenerateUiCodeButton.png",
     "!0PPC-UiGen-BaseType.dll",
     "PL-PPC-UiGen.pdf",
     "UiGenBETA.7z",
     "UiGenBETA.7z.tmp",
-    "Pasted image 20250321234142.png",
-    "PL_PPC_UiGen.unitypackage",
     "0PPC-UiGen-BaseType.dll",
     "create a link.md"
   ]

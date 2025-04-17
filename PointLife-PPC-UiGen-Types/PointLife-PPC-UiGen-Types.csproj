@@ -7,12 +7,12 @@
     <AssemblyTitle>PointLife-PPC-UiGen</AssemblyTitle>
     <Product>PointLife-PPC-UiGen</Product>
     <Copyright>Copyright ©  2025</Copyright>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
-    <FileVersion>1.1.0</FileVersion>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <FileVersion>0.1.0</FileVersion>
     <LangVersion>preview</LangVersion>
     <AssemblyName>!0PPC-UiGen-BaseType</AssemblyName>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
-    <Version>$(VersionPrefix)1.1.0</Version>
+    <Version>$(VersionPrefix)0.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
