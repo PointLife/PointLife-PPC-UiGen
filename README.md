@@ -7,6 +7,10 @@
 - Fewer bugs – avoids mismatches like "EnterButton" vs "Enterbutton" between code and Unity
 - No transfer errors – eliminates inconsistencies between Unity and C# implementations
 
+## Youtube Video
+
+https://youtu.be/u2BUsvn1b1o
+
 ## Setup and usage
 
 1. **Import unitypackage**  
